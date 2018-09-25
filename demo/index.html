@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>BM Button Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+  <demo-view></demo-view>
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module">
+
+		import {LitElement, html} from '@polymer/lit-element';
+		import {BMButton} from '../bm-button.js'
+
+    class DemoView extends LitElement {
+      render() {
+        return html`
+					<bm-button disabled>Calcular</bm-button>
+        `;
+      }
+    }
+
+    customElements.define('demo-view', DemoView);
+  </script>
+</body>
+</html>
